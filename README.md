@@ -1,2 +1,2 @@
 # WebRecording
-can be shot with a webcam without a high camera
+can be shot with a webcamera without a high camera
