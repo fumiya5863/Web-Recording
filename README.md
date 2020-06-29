@@ -1,4 +1,4 @@
-# WebRecording
+# Web-Recording
 Webカメラだけで動画撮影を実現することが出来る
 
 ## Features
