@@ -4,9 +4,9 @@ can be shot with a webcamera without a high camera
 Webカメラだけで動画撮影を実現することが出来る
 
 ## Features
-動画撮影をする時に高いカメラを買う必要もなく、かといってスマホではという人にオススメの機能
+動画撮影をする時に高いカメラを買う必要もなくかといってスマホではという人にオススメの機能
 
-他の機能と組み合わせることで色々なことを実現出来る
+また他の機能と組み合わせることで色々なことを実現出来る
 
 ## Requirement
 
@@ -20,8 +20,16 @@ Webカメラだけで動画撮影を実現することが出来る
 git clone https://github.com/fumiya5863/WebRecording.git
 cd docs
 ```
-その後は、IE以外のブラウザで読み込むと使用することが出来る
+その後はIE以外のブラウザで読み込むと使用することが出来る
+
+他の機能と組み合わせる時はファイルの中身を変更
+
+## FileComposition
+- WebRecording/
+    - docs/
+        - index.html
+        - index.js
 
 ## Author
 
-* fumiya5863[https://github.com/fumiya5863]
+* [fumiya5863](https://github.com/fumiya5863)
