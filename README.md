@@ -1,6 +1,4 @@
 # WebRecording
-can be shot with a webcamera without a high camera
-
 Webカメラだけで動画撮影を実現することが出来る
 
 ## Features
