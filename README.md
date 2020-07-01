@@ -1,18 +1,20 @@
 # Web-Recording
 Webカメラだけで動画撮影を実現することが出来る
 
-## Features
+## 説明
+
+## 特徴
 動画撮影をする時に高いカメラを買う必要もなくかといってスマホではという人にオススメの機能
 
 また他の機能と組み合わせることで色々なことを実現出来る
 
-## Requirement
+## 環境構成
 
 * HTML 5.2
 * CSS 3
 * JavaSvript 1.8
 
-## Usage
+## 利用方法
 
 ```
 git clone https://github.com/fumiya5863/WebRecording.git
@@ -22,12 +24,12 @@ cd docs
 
 他の機能と組み合わせる時はファイルの中身を変更
 
-## FileComposition
+## フォルダ構成
 - WebRecording/
     - docs/
         - index.html
         - index.js
 
-## Author
+## 作者
 
 * [fumiya5863](https://github.com/fumiya5863)
