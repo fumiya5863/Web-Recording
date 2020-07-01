@@ -1,5 +1,5 @@
 # Web-Recording
-**Web-Recordingとは**
+### Web-Recordingとは
 
 Webカメラだけで動画撮影を実現することが出来る
 
