@@ -14,7 +14,9 @@ Webカメラだけで動画撮影を実現することが出来る
 * HTML 5.2
 * CSS 3
 * JavaSvript 1.8
- * MediaDevices.getUserMedia API
+* MediaDevices.getUserMedia (Web API)
+* MediaRecorder (Web API)
+* Blob (Web API)
 
 ## 利用方法
 
