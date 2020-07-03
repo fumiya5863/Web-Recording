@@ -1,6 +1,6 @@
 'use strict';
 {
-    // 変数と定数の初期化
+    // 定数の定義&&変数の初期化
     const localVideo  = document.getElementById('video');
     const recordVideo = document.getElementById('recordVideo');
     const recordBtn   = document.getElementById('record');
@@ -13,7 +13,7 @@
     // メディアの種類や形態を指定
     const constraints = {
         video: {
-            width: 1280,
+            width : 1280,
             height: 720,
         },
         audio: true,
@@ -27,33 +27,38 @@
             localVideo.srcObject = stream;
             localStream = stream;
         }).catch((error) => {
-            console.log(error);
+            console.log(error.name + ': ' + error.message);
             alert('接続に失敗しました');
         });
+
+    // 100ミリ秒毎に呼び出される    
+    function handleDataAvailable(event) {
+        if (event.data.size > 0) {
+            recordBlobs.push(event.data);
+        } 
+    }
     
     recordBtn.addEventListener('click', () => {
         if (recordBtn.textContent === "録画開始") {
             recordBlobs = [];
-            const mediaType = { mimeType: 'video/webm;codecs=vp9'};
+            const opstions = { mimeType: 'video/webm; codecs=vp9'};
 
             try {
-                mediaRecord = new MediaRecorder(localStream, mediaType);
+                mediaRecord = new MediaRecorder(localStream, opstions);
             } catch(error) {
-                console.log(error);
+                console.log(error.name + ': ' + error.message);
+                alert('録画をすることが出来ません');
             }
 
             // 一定間隔で録画が区切られて、データが渡される
-            mediaRecord.ondataavailable = (event) => {
-                recordBlobs.push(event.data);
-            };
-            
+            mediaRecord.ondataavailable = handleDataAvailable;
+
             // メディア記録の開始 100ミリ秒ごとに録画データを区切る
             mediaRecord.start(100);
             
             recordBtn.textContent = "録画停止";
             playbackBtn.disabled  = true; 
-            downloadBtn.disabled  = true;  
-            
+            downloadBtn.disabled  = true;
         } else {
             // 録画停止
             mediaRecord.stop();
@@ -70,17 +75,17 @@
     });
 
     playbackBtn.addEventListener('click', () => {
-        const mediaType = { type: 'video/webm' };
-        const blob = new Blob(recordBlobs, mediaType);
-        const url = window.URL.createObjectURL(blob);
+        const opstions    = { type: 'video/webm' };
+        const superBuffer = new Blob(recordBlobs, opstions);
+        const url = window.URL.createObjectURL(superBuffer);
         recordVideo.src = url;
         recordVideo.controls = true;
     });
 
     downloadBtn.addEventListener('click', () => {
-        const mediaType = { type: 'video/webm' };
-        const blob = new Blob(recordBlobs, mediaType);
-        const url = window.URL.createObjectURL(blob);
+        const options     = { type: 'video/webm' };
+        const superBuffer = new Blob(recordBlobs, options);
+        const url = window.URL.createObjectURL(superBuffer);
         const a = document.createElement("a");
         a.style.display = "none";
         a.href = url;
@@ -90,7 +95,4 @@
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
     });
-
-
-
 }
