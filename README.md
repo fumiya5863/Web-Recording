@@ -29,7 +29,6 @@ https://github.com/fumiya5863/WebRecording.git
 git cloneする場合
 ```
 git clone https://github.com/fumiya5863/WebRecording.git
-cd docs
 ```
 
 ## 利用方法
