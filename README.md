@@ -9,10 +9,6 @@ Webカメラだけで動画撮影を実現することが出来る
 
 GitHubからダウンロードするかgit cloneしてください
 
-ダウンロード先
-
-https://github.com/fumiya5863/WebRecording.git
-
 git cloneする場合
 ```
 git clone https://github.com/fumiya5863/WebRecording.git
