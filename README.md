@@ -25,6 +25,8 @@ git clone https://github.com/fumiya5863/WebRecording.git
 cd docs
 ```
 
+## 利用方法
+
 
 ## フォルダ構成
 - WebRecording/
