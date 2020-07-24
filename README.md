@@ -18,15 +18,13 @@ Webカメラだけで動画撮影を実現することが出来る
 * MediaRecorder (Web API)
 * Blob (Web API)
 
-## 利用方法
+## ダウンロード方法
 
 ```
 git clone https://github.com/fumiya5863/WebRecording.git
 cd docs
 ```
-その後はIE以外のブラウザで読み込むと使用することが出来る
 
-他の機能と組み合わせる時はファイルの中身を変更
 
 ## フォルダ構成
 - WebRecording/
