@@ -11,13 +11,15 @@ Webカメラだけで動画撮影を実現することが出来る
 
 ## 環境構成
 
+```
+
 * HTML 5.2
 * CSS 3
 * JavaSvript 1.8
 * MediaDevices.getUserMedia (Web API)
 * MediaRecorder (Web API)
 * Blob (Web API)
-
+```
 ## ダウンロード方法
 
 GitHubからダウンロードするかgit cloneしてください
