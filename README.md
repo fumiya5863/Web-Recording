@@ -24,7 +24,7 @@ GitHubからダウンロードするかgit cloneしてください
 
 ダウンロード先
 
-https://github.com/tech-is/baseball
+https://github.com/fumiya5863/WebRecording.git
 
 git cloneする場合
 ```
