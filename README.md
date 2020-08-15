@@ -7,7 +7,7 @@ Webカメラだけで動画撮影を実現することが出来る
 
 ## ダウンロード方法
 
-GitHubからダウンロードするかgit cloneしてください
+GitHubからZIPでダウンロードするかgit cloneしてください
 
 git cloneする場合
 ```
